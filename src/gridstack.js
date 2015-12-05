@@ -367,7 +367,7 @@
             });
             _.chain(elements).sortBy(function (x) { return x.i; }).each(function (i) {
                 self._prepare_element(i.el);
-            });
+            }).value();
         }
 
         this.set_animation(this.opts.animate);
