@@ -302,7 +302,7 @@
                 }
                 return $.extend({}, n);
             }));
-
+        clone.clean_nodes();
         clone.move_node(cloned_node, x, y, width, height);
 
         var res = true;
