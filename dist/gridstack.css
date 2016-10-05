@@ -23,7 +23,7 @@
   right: 10px;
   bottom: 0;
   width: auto;
-  z-index: 0 !important;
+  z-index: 0;
   text-align: center;
 }
 
@@ -41,7 +41,7 @@
   right: 10px;
   bottom: 0;
   width: auto;
-  z-index: 0 !important;
+  z-index: 0;
   overflow-x: hidden;
   overflow-y: auto;
 }
