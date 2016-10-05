@@ -10,7 +10,7 @@ gridstack.js
 gridstack.js is a jQuery plugin for widget layout. This is drag-and-drop multi-column grid. It allows you to build
 draggable responsive bootstrap v3 friendly layouts. It also works great with [knockout.js](http://knockoutjs.com), [angular.js](https://angularjs.org) and touch devices.
 
-Inspired by [gridster.js](http://gridster.net). Built with love.
+Inspired by [gridster.js](https://github.com/ducksboard/gridster.js). Built with love.
 
 Join gridstack.js on Slack: https://gridstackjs.troolee.com
 
@@ -45,6 +45,8 @@ Join gridstack.js on Slack: https://gridstackjs.troolee.com
   - [Using AniJS](#using-anijs)
 - [The Team](#the-team)
 - [Changes](#changes)
+      - [v0.2.6 (Development version)](#v027-dev-development-version)
+      - [v0.2.6 (2016-08-17)](#v026-2016-08-17)
       - [v0.2.5 (2016-03-02)](#v025-2016-03-02)
       - [v0.2.4 (2016-02-15)](#v024-2016-02-15)
       - [v0.2.3 (2015-06-23)](#v023-2015-06-23)
@@ -68,9 +70,9 @@ Usage
 
 ## Requirements
 
-* [lodash.js](https://lodash.com) (>= 3.5.0)
-* [jQuery](http://jquery.com) (>= 1.11.0)
-* [jQuery UI](http://jqueryui.com) (>= 1.11.0). Minimum required components: Core, Widget, Mouse, Draggable, Resizable
+* [lodash.js](https://lodash.com) (>= 3.5.0, full build)
+* [jQuery](http://jquery.com) (>= 3.1.0)
+* [jQuery UI](http://jqueryui.com) (>= 1.12.0). Minimum required components: Core, Widget, Mouse, Draggable, Resizable
 * (Optional) [jquery-ui-touch-punch](https://github.com/furf/jquery-ui-touch-punch) for touch-based devices support
 
 Note: You can still use [underscore.js](http://underscorejs.org) (>= 1.7.0) instead of lodash.js
@@ -472,6 +474,16 @@ for help.
 
 Changes
 =======
+
+#### v0.2.6 (2016-08-17)
+
+- update requirements to the latest versions of jQuery (v3.1.0+) and jquery-ui (v1.12.0+).
+- fix jQuery `size()` ([#486](https://github.com/troolee/gridstack.js/issues/486)).
+- update `destroy([detachGrid])` call ([#422](https://github.com/troolee/gridstack.js/issues/422)).
+- don't mutate options when calling `draggable` and `resizable`. ([#505](https://github.com/troolee/gridstack.js/issues/505)).
+- update _notify to allow detach ([#411](https://github.com/troolee/gridstack.js/issues/411)).
+- fix code that checks for jquery-ui ([#481](https://github.com/troolee/gridstack.js/issues/481)).
+- fix `cellWidth` calculation on empty grid
 
 #### v0.2.5 (2016-03-02)
 
