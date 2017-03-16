@@ -538,7 +538,7 @@
             draggable: _.defaults(opts.draggable || {}, {
                 handle: (opts.handleClass ? '.' + opts.handleClass : (opts.handle ? opts.handle : '')) ||
                     '.grid-stack-item-content',
-                scroll: false,
+                scroll: opts.scroll || false,
                 appendTo: 'body'
             }),
             disableDrag: opts.disableDrag || false,
