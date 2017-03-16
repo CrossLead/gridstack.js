@@ -14,9 +14,7 @@
             'jquery-ui/widgets/mouse', 'jquery-ui/widgets/draggable', 'jquery-ui/widgets/droppable',
             'jquery-ui/widgets/resizable'], factory);
     } else if (typeof exports !== 'undefined') {
-        try { jQuery = require('jquery'); } catch (e) {}
-        try { _ = require('lodash'); } catch (e) {}
-        factory(jQuery, _);
+        factory(require('jquery'), require('lodash'));
     } else {
         factory(jQuery, _);
     }
