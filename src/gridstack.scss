@@ -125,6 +125,8 @@ $animation_speed: .3s !default;
     }
 }
 
+/*
+TCH 2017-5-21 ... this breaks itm ... does dashboard need this?
 @media (max-width: 768px) {
     .grid-stack-item {
         position: relative !important;
@@ -138,3 +140,4 @@ $animation_speed: .3s !default;
 
     .grid-stack { height: auto !important; }
 }
+*/
